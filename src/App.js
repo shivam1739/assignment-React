@@ -1,21 +1,16 @@
 import React from "react";
 import "./App.css";
-import Chess from "./Burger/BurgerComponent/Chess/Chees";
-import CreateBurger from "./Burger/CreateBurger";
-import { BurgerComponentEnum } from "./resources";
+import Container from "./Container";
+
 function App() {
+  let obj = {
+    name: "shivam",
+    age: 16,
+  };
   return (
     <div className="body">
-      <CreateBurger
-        burgerStack={[
-          BurgerComponentEnum.BREADUPPER,
-
-          BurgerComponentEnum.CHEESE,
-          BurgerComponentEnum.LETTUCE,
-          BurgerComponentEnum.TOMATOES,
-          BurgerComponentEnum.BREADLOWER,
-        ]}
-      />
+      <Container />
+      {/* <New /> */}
     </div>
   );
 }
