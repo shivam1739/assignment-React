@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Container from "./Container";
+import TicTacToe from "./components/TicTacToe/TicTacToe";
 
 function App() {
   let obj = {
@@ -9,8 +9,7 @@ function App() {
   };
   return (
     <div className="body">
-      <Container />
-      {/* <New /> */}
+      <TicTacToe />
     </div>
   );
 }
